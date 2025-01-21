@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Your Favorite Animal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="adoption__form">
+    <h1>Adopt Your Favorite Animal</h1>
+
+    <label for="name">Your Name</label>
+    <input type="text" id="name" placeholder="Enter your name" name="name">
+
+    <label for="animal">Choose an Animal</label>
+    <select name="animal" id="animal" required>
+      <option value="">-- Select an Animal --</option>
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="rabbit">Rabbit</option>
+      <option value="parrot">Parrot</option>
+      <option value="hamster">Hamster</option>
+    </select>
+
+    <label for="reason">Why Do You Want to Adopt?</label>
+    <textarea name="reason" id="reason" placeholder="Write your reason here..." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
