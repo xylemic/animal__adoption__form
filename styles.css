@@ -5,65 +5,105 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  font-family: 'Roboto', Arial, sans-serif;
+  background: linear-gradient(135deg, rgba(245, 247, 250, .9), rgba(195, 207, 226, .9)),
+        url('/images/camilo-fierro-z7rcwqCi77s-unsplash.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+  background-blend-mode: soft-light;
 }
 
 .adoption__form h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 700;
+  position: relative;
+}
+
+.adoption__form h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #4caf50;
 }
 
 .adoption__form label {
   display: block;
-  margin-bottom: 8px;
-  color: #555;
-  font-weight: bold;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: 500;
 }
 
 .adoption__form input[type="text"],
 .adoption__form select,
 .adoption__form textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: .98rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: .95rem;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color.3s ease;
+}
+
+.adoption__form input[type="text"]:focus,
+.adoption__form select:focus,
+.adoption__form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
 }
 
 .adoption__form textarea {
-  resize: none;
-  height: 100px;
+  resize: vertical;
+  min-height: 120px;
+  max-height: 250px;
 }
 
 .adoption__form button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background: #4caf50;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 6px;
+  font-size: 18px;
   cursor: pointer;
-  transition: background .3s ease;
+  font-weight: 500;
+  transition: background .3s ease, transform .2s ease;
 }
 
 .adoption__form button:hover {
   background: #45a049;
+  transform: scale(1.02);
+}
+
+.adoption__form button:active {
+  transform: scale(0.98);
 }
 
 .adoption__form {
-  max-width: 400px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, .18);
   text-align: left;
+  transition: transform .3s ease;
+}
+
+.adoption__form:hover {
+  transform: translateY(-5px);
 }
 
