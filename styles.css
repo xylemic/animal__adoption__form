@@ -32,13 +32,13 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: #4caf50;
+  background: #de8029;
 }
 
 .adoption__form label {
   display: block;
   margin-bottom: 10px;
-  color: #34495e;
+  color: #011931;
   font-weight: 500;
 }
 
@@ -58,7 +58,7 @@ body {
 .adoption__form select:focus,
 .adoption__form textarea:focus {
   outline: none;
-  border-color: #4caf50;
+  border-color: #de8029;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
 }
 
@@ -71,7 +71,7 @@ body {
 .adoption__form button {
   width: 100%;
   padding: 12px;
-  background: #4caf50;
+  background: #de8029;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -82,7 +82,7 @@ body {
 }
 
 .adoption__form button:hover {
-  background: #45a049;
+  background: #c86e2d;
   transform: scale(1.02);
 }
 
@@ -97,7 +97,7 @@ body {
   background: rgba(255, 255, 255, .2);
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, .18);
   text-align: left;
   transition: transform .3s ease;
